@@ -1,5 +1,5 @@
-# AcidField
-Acid Field ERC-721 NFT smart contract. Super minimal @capnganj mods to the @hashlips ERC-721 NFT contract.
+# Acid Field
+Acid Field ERC-721 smart contract and support stuff. Super minimal @capnganj mods to the @hashlips ERC-721 NFT contract.
 
 
 ## Technical roadmap
