@@ -19,7 +19,7 @@ This is based on the hashlips masterclass NFT collection youtube video, and the 
 
 ## Technical roadmap
 - [x] Acid Field *Alpha* drawing algorithm development - [*Acid Tests* ](https://objkt.com/collection/KT1QJy7xLUmXqG6ZvrkXwAe27dXHPk7hA6eJ) on Tezos <3
-- [ ] Acid Field *Graduation* runs.  Final drawing logic tweaks, metadata development, iterative testing data for testnet deployment.
+- [x] Acid Field *Graduation* runs.  Final drawing logic tweaks, metadata development, iterative testing data for testnet deployment.
 - [ ] Acid Field Beta Rinkeby deployment.  Drawings and metadata on IPFS.  Attach and customize minting dapp.  Test minting > Opensea import > reveal.  Test metadata URI update after reveal
 - [ ] Sniper API deployment and Rinkeby testing
 
