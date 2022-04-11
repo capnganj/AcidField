@@ -10,7 +10,7 @@ module.exports = {
         colors: {
             popupsbg: colors.white,
             neutral: colors.slate,
-            primary: colors.pink,
+            primary: colors.blue,
             primarytxt: colors.white,
             warning: colors.amber,
             warningtxt: colors.black,

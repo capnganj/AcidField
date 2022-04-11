@@ -7,7 +7,6 @@ interface Props {
   maxSupply: number;
   isPaused: boolean;
   tokenPrice: BigNumber;
-  discountPrice: BigNumber;
 }
 
 interface State {
@@ -42,9 +41,9 @@ export default class CollectionStatus extends React.Component<Props, State> {
             {this.props.totalSupply}/{this.props.maxSupply}
           </div>
 
-          <div className='mint-discount'>
+          <div className='mint'>
             <span className='label'>Token Price</span>
-            { ethers.utils.formatEther(this.props.discountPrice).slice(0,6) } Matic
+            { ethers.utils.formatEther(this.props.tokenPrice) } Ether
           </div>
 
         </div>

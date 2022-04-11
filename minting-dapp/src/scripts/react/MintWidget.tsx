@@ -56,11 +56,11 @@ export default class MintWidget extends React.Component<Props, State> {
         {this.canMint() ?
           <div className="mint-widget">
             <div className="preview">
-              <img src="/build/images/blueToad.png" alt="Collection preview" />
+              <img src="/build/images/80.png" alt="Collection preview" />
             </div>
 
             <div className="price">
-              <strong>Total price:</strong> {utils.formatEther(this.props.tokenPrice.mul(this.state.mintAmount)).slice(0,6)} Matic
+              <strong>Total price:</strong> {utils.formatEther(this.props.tokenPrice.mul(this.state.mintAmount))} Ether
             </div>
 
             <div className="controls">
@@ -73,7 +73,7 @@ export default class MintWidget extends React.Component<Props, State> {
           :
           <div className="cannot-mint">
             <p>
-              Contract paused!  Minting will start 3/21/2022
+              Contract paused!  Minting will start 4/25/2022
             </p>
             <br/>
             <span className="emoji">⏳</span>

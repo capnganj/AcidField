@@ -22,7 +22,6 @@ interface State {
   maxMintAmountPerTx: number;
   tokenPrice: BigNumber;
   isPaused: boolean;
-  discountPrice: BigNumber;
   errorMessage: string|JSX.Element|null,
 }
 
@@ -35,7 +34,6 @@ const defaultState: State = {
   maxMintAmountPerTx: 0,
   tokenPrice: BigNumber.from(0),
   isPaused: true,
-  discountPrice: BigNumber.from(0),
   errorMessage: null,
 };
 
@@ -74,7 +72,7 @@ export default class Dapp extends React.Component<Props, State> {
   async mintTokens(amount: number): Promise<void>
   {
     try {
-      await this.contract.mint(amount, {value: this.state.discountPrice.mul(amount)});
+      await this.contract.mint(amount, {value: this.state.tokenPrice.mul(amount)});
     } catch (e) {
       this.setError(e);
     }
@@ -126,13 +124,12 @@ export default class Dapp extends React.Component<Props, State> {
                   totalSupply={this.state.totalSupply}
                   isPaused={this.state.isPaused}
                   tokenPrice={this.state.tokenPrice}
-                  discountPrice={this.state.discountPrice}
                 />
                 {this.state.totalSupply < this.state.maxSupply ?
                   <MintWidget
                     maxSupply={this.state.maxSupply}
                     totalSupply={this.state.totalSupply}
-                    tokenPrice={this.state.discountPrice}
+                    tokenPrice={this.state.tokenPrice}
                     maxMintAmountPerTx={this.state.maxMintAmountPerTx}
                     isPaused={this.state.isPaused}
                     mintTokens={(mintAmount) => this.mintTokens(mintAmount)}
@@ -174,34 +171,31 @@ export default class Dapp extends React.Component<Props, State> {
           : null}
 
           <div className='project-info'>
-            <h3><strong>Hot Links</strong></h3>
+            <h3><strong>Project Links</strong></h3>
             <p>
-              <a href={this.generateContractUrl()} target="_blank">ERC721 Contract on Polygonscan</a>
+              <a href={this.generateContractUrl()} target="_blank">ERC-721 Contract on Etherscan</a>
               <br/>
-              <a href='https://www.capnganj.art/nft-collections/poison-toads' target="_blank">Project Website & Roadmap</a>
+              <a href='https://www.capnganj.art/nft-collections/acid-field' target="_blank">Project Website & Roadmap</a>
               <br/>
-              <a href='https://opensea.io/collection/poison-toads' target="_blank">Opensea Collection</a>
+              <a href='https://opensea.io/collection/acid-field' target="_blank">Opensea Collection</a>
               <br/>
-              <a href='https://opensea.io/collection/poison-toads-utility' target="_blank">Minting Utilities on Opensea</a>
               
             </p>
             <br/><br/>
 
             <h3><strong>How To Mint</strong></h3>
             <p>
-              This is the minting dapp for the Poison Toads NFT collection on Polygon by @capnganj.  To mint new 1/1 Poison Toad NFTs using this dapp, follow these steps:
+              This is the minting dapp for the Acid Field NFT collection on Ethereum by @capnganj.  To mint new 1/1 Acid Field NFTs using this dapp, follow these steps:
               <br/><br/>
-              1) Fund your metamask wallet with Matic on the Polygon mainnet.
+              1) Fund your metamask wallet with Ether on the Ethereum mainnet.
               <br/><br/>
-              2) Consider purchasing a minting utility on Opensea to unlock a discounted mint price!  If you have one of the PoisonToadUtility NFTs in your wallet, the mint price will be cut to either 1/2, 1/4, or 1/8 the standard mint price, depending on the utility NFT's rarity.
+              2) Connect using the 'connect wallet' button. Make sure you are on the Ethereum Mainnet network in metamask.
               <br/><br/>
-              3) Connect your metamask wallet using the 'connect wallet' button. Make sure you are on the Polygon/Matic Mainnet network in metamask.
+              3) Use the '-' and '+' buttons to select how many NFTs to mint. Press the 'Mint' button when you are ready to mint, and approve the transaction in your wallet.  All transactions are final and irreversable.
               <br/><br/>
-              4) Use the '-' and '+' buttons to select how many NFTs to mint. Press the 'Mint' button when you are ready to mint, and approve the transaction in your metamask wallet.  All transactions are final and irreversable.
+              4) You can check your minted tokens right away in your Opensea profile or using Etherscan.  If all of the NFTs look the same on Opensea and have a '?' in the image, please sit tight for the collection reveal!!!
               <br/><br/>
-              5) You can check your minted tokens right away in your Opensea profile or using Polygonscan.  If all of the NFTs look the same on Opensea and have a '?' in the image, please sit tight for the collection reveal!!!
-              <br/><br/>
-              6) Repeat steps 4-6 as many times as you'd like to.  If you smoke weed, please don't forget to get super duper high before, during, and after this process for good measure.
+              5) Repeat steps 3-5 as many times as you'd like to.  If you smoke weed, please don't forget to get super duper high before, during, and after this process for good measure.
             </p>
           </div>
       </>
@@ -303,8 +297,7 @@ export default class Dapp extends React.Component<Props, State> {
       totalSupply: (await this.contract.totalSupply()).toNumber(),
       maxMintAmountPerTx: (await this.contract.maxMintAmountPerTx()).toNumber(),
       tokenPrice: await this.contract.cost(),
-      isPaused: await this.contract.paused(),
-      discountPrice: await this.contract.discountCost(walletAccounts[0])
+      isPaused: await this.contract.paused()
     });
   }
 
