@@ -1,4 +1,4 @@
-# Acid Field
+# Psilocybe
 Acid Field ERC-721 smart contract and minting dapp. Super minimal @capnganj mods to the @hashlips lab v2 ERC-721 NFT contract and minting dapp.
 
 ## instructions
@@ -19,13 +19,11 @@ This is based on the hashlips masterclass NFT collection youtube video, and the 
 
 
 ## Technical roadmap
-- [x] Acid Field *Alpha* drawing algorithm development - [*Acid Tests* ](https://objkt.com/collection/KT1QJy7xLUmXqG6ZvrkXwAe27dXHPk7hA6eJ) on Tezos <3
-- [x] Acid Field *Graduation* runs.  Final drawing logic tweaks, metadata development, iterative testing data for testnet deployment.
-- [x] Acid Field Beta Rinkeby deployment.  Hidden metadata on IPFS.  Attach and customize minting dapp.  Test minting > Opensea import.  
+- [ ] Psilocybe Beta Rinkeby deployment.  Hidden metadata on IPFS.  Attach and customize minting dapp.  Test minting > Opensea import.  
 - [ ] Sniper API deployment and Rinkeby reveal testing
 
-- [ ] Acid Field final drawing and metadata generation - 999 NFTs
-- [ ] Acid Field production deployment, first mints, and Marketplace project imports
+- [ ] Psilocybe final 3d model and metadata generation - 3k NFTs
+- [ ] Psilocybe production deployment, first mints, and Marketplace project imports
 - [ ] Unpause
 - [ ] Reveal
 
