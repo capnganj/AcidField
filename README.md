@@ -1,5 +1,5 @@
 # Psilocybe
-Acid Field ERC-721 smart contract and minting dapp. Super minimal @capnganj mods to the @hashlips lab v2 ERC-721 NFT contract and minting dapp.
+Psilocybe ERC-721 smart contract and minting dapp. Super minimal @capnganj mods to the @hashlips lab v2 ERC-721 NFT contract and minting dapp.
 
 ## instructions
 This is based on the hashlips masterclass NFT collection youtube video, and the hashlips-labs nft collection v2 repo.  The Smart contract will be deployed using remix, and is copied in here to make the dapp work.
