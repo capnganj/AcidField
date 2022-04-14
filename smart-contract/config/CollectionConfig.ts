@@ -9,11 +9,11 @@ const CollectionConfig: CollectionConfigInterface = {
   // The contract name can be updated using the following command:
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
-  contractName: 'AcidField',
-  tokenName: 'Acid Field',
-  tokenSymbol: 'HIGHAF',
+  contractName: 'Psilocybe',
+  tokenName: 'Psilocybe',
+  tokenSymbol: 'PS',
   hiddenMetadataUri: 'ipfs://QmWo9jtpH5ZumkdAFq7SoyrGyu3BSmJFxkVgsKRdbxUuVF/hidden.json',
-  maxSupply: 999,
+  maxSupply: 4444,
   whitelistSale: {
     price: 0.1,
     maxMintAmountPerTx: 1,
@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.1,
     maxMintAmountPerTx: 10,
   },
-  contractAddress: "0xb8569075017f6Df4b2c6D0844540723a12e0Da8B",
+  contractAddress: null,
   marketplaceIdentifier: 'my-nft-token',
   marketplaceConfig: openSea,
   whitelistAddresses: whitelistAddresses,

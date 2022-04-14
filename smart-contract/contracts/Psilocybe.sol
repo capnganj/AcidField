@@ -4,7 +4,7 @@
 /**
     !Disclaimer!
     
-    Smoke weed every day.  Do not take too much acid IRL.
+    Smoke weed every day.  Do not eat too many mushrooms IRL.
 */
 
 pragma solidity ^0.8.0;
@@ -15,7 +15,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 
 
-contract AcidField is ERC721, Ownable {
+contract Psilocybe is ERC721, Ownable {
   using Strings for uint256;
   using Counters for Counters.Counter;
 
@@ -26,13 +26,13 @@ contract AcidField is ERC721, Ownable {
   string public hiddenMetadataUri;
   
   uint256 public cost = 0.025 ether;
-  uint256 public maxSupply = 999;
+  uint256 public maxSupply = 4444;
   uint256 public maxMintAmountPerTx = 15;
 
   bool public paused = true;
   bool public revealed = false;
 
-  constructor() ERC721("AcidField", "HIGHAF") {
+  constructor() ERC721("Psilocybe", "PS") {
     setHiddenMetadataUri("ipfs://QmWo9jtpH5ZumkdAFq7SoyrGyu3BSmJFxkVgsKRdbxUuVF/hidden.json");
   }
 

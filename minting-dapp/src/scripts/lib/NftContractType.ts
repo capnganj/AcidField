@@ -1,7 +1,7 @@
-// The name below ("AcidField") should match the name of your Solidity contract.
+// The name below ("Psilocybe") should match the name of your Solidity contract.
 // It can be updated using the following command:
 // yarn rename-contract NEW_CONTRACT_NAME
 // Please DO NOT change it manually!
-import { AcidField as NftContractType } from '../../../../smart-contract/typechain/index';
+import { Psilocybe as NftContractType } from '../../../../smart-contract/typechain/index';
 
 export default NftContractType;
