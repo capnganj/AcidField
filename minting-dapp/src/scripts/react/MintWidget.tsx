@@ -73,7 +73,7 @@ export default class MintWidget extends React.Component<Props, State> {
           :
           <div className="cannot-mint">
             <p>
-              Contract paused!  Minting will start 4/25/2022
+              Contract paused!  Minting will start on 5/25/2022 
             </p>
             <br/>
             <span className="emoji">⏳</span>

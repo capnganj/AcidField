@@ -1,8 +1,8 @@
 {
-  "build/main.css": "/PoisonToadsDapp/build/main.css",
-  "build/main.js": "/PoisonToadsDapp/build/main.js",
-  "build/images/33.png": "/PoisonToadsDapp/build/images/33.png",
-  "build/images/80.png": "/PoisonToadsDapp/build/images/80.png",
-  "build/images/dappLogo-01.png": "/PoisonToadsDapp/build/images/dappLogo-01.png",
-  "build/images/33_SMALL.png": "/PoisonToadsDapp/build/images/33_SMALL.png"
+  "build/main.css": "/Psilocybe/build/main.css",
+  "build/main.js": "/Psilocybe/build/main.js",
+  "build/images/33.png": "/Psilocybe/build/images/33.png",
+  "build/images/80.png": "/Psilocybe/build/images/80.png",
+  "build/images/dappLogo-01.png": "/Psilocybe/build/images/dappLogo-01.png",
+  "build/images/33_SMALL.png": "/Psilocybe/build/images/33_SMALL.png"
 }

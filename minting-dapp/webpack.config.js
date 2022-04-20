@@ -17,7 +17,7 @@ Encore
     //.setPublicPath('/build')
 
     //production
-    .setPublicPath('/PoisonToadsDapp/build')
+    .setPublicPath('/Psilocybe/build')
 
     // only needed for CDN's or sub-directory deploy
     .setManifestKeyPrefix('build/')

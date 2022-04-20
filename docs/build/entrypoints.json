@@ -2,10 +2,10 @@
   "entrypoints": {
     "main": {
       "css": [
-        "/PoisonToadsDapp/build/main.css"
+        "/Psilocybe/build/main.css"
       ],
       "js": [
-        "/PoisonToadsDapp/build/main.js"
+        "/Psilocybe/build/main.js"
       ]
     }
   }

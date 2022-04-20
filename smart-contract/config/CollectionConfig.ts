@@ -26,8 +26,8 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.1,
     maxMintAmountPerTx: 10,
   },
-  contractAddress: null,
-  marketplaceIdentifier: 'my-nft-token',
+  contractAddress: '0x069cAF6265678a7bf50c343dbf88642670852436',
+  marketplaceIdentifier: 'psilocybe',
   marketplaceConfig: openSea,
   whitelistAddresses: whitelistAddresses,
 };

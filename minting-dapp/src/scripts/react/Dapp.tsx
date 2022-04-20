@@ -175,9 +175,9 @@ export default class Dapp extends React.Component<Props, State> {
             <p>
               <a href={this.generateContractUrl()} target="_blank">ERC-721 Contract on Etherscan</a>
               <br/>
-              <a href='https://www.capnganj.art/nft-collections/acid-field' target="_blank">Project Website & Roadmap</a>
+              <a href='https://www.capnganj.art/nft-collections/psilocybe' target="_blank">Project Website & Roadmap</a>
               <br/>
-              <a href='https://opensea.io/collection/acid-field' target="_blank">Opensea Collection</a>
+              <a href='https://opensea.io/collection/psilocybe' target="_blank">Opensea Collection</a>
               <br/>
               
             </p>
@@ -185,7 +185,7 @@ export default class Dapp extends React.Component<Props, State> {
 
             <h3><strong>How To Mint</strong></h3>
             <p>
-              This is the minting dapp for the Acid Field NFT collection on Ethereum by @capnganj.  To mint new 1/1 Acid Field NFTs using this dapp, follow these steps:
+              This is the minting dapp for the Psilocybe NFT collection on Ethereum by @capnganj.  To mint new 1/1 Psilocybe NFTs using this dapp, follow these steps:
               <br/><br/>
               1) Fund your metamask wallet with Ether on the Ethereum mainnet.
               <br/><br/>
