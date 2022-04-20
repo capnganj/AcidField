@@ -14,16 +14,16 @@ This is based on the hashlips masterclass NFT collection youtube video, and the 
 - switch setPublicPath setting in the webpack.config.js file
 - yarn run build to build a production version inside of /minting-dapp/public
 - copy everything from /minting-dapp/public to /docs (this is where gh-pages point to in the repo settings)
-- manually add the /AcidField prefix to all img and asset links in the /docs file.  index.html and main.js
+- manually add the /Psilocybe prefix to all img and asset links in the /docs files.  index.html and main.js
 - push to main branch on github
 
 
 ## Technical roadmap
-- [ ] Psilocybe Beta Rinkeby deployment.  Hidden metadata on IPFS.  Attach and customize minting dapp.  Test minting > Opensea import.  
+- [x] Psilocybe Beta Rinkeby deployment.  Hidden metadata on IPFS.  Attach and customize minting dapp.  Test minting > Opensea import.  
 - [ ] Sniper API deployment and Rinkeby reveal testing
 
-- [ ] Psilocybe final 3d model and metadata generation - 3k NFTs
-- [ ] Psilocybe production deployment, first mints, and Marketplace project imports
+- [ ] Psilocybe final 3d model and metadata generation - 4.4k NFTs
+- [x] Psilocybe production deployment, first mints, and Marketplace project imports
 - [ ] Unpause
 - [ ] Reveal
 
